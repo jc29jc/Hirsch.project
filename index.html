@@ -18,52 +18,42 @@
 
     <main>
         <h2 class="section-header">// Overview</h2>
+        
         <p class="page-intro">When someone gets out of prison, people usually like to believe that their punishment has been faced and that they can just start fresh. But in reality, instead of being free to start over, they face a new invisible punishment that no one recognizes after being released. This website is going to expose the harsh reality of the challenges an ex-convict faces after being released from jail.</p>
 
-        <h2 class="section-header" style="margin-top: 40px;">// Module Directory</h2>
+        <h2 class="section-header">// Explore the Platform</h2>
         
-        <div class="grid-menu">
-            <div class="interactive-card" onclick="loadPanel('inequity', this)">
-                <h3>01 // The Inequity</h3>
-                <p>Human-side analysis of systemic reentry barriers.</p>
-            </div>
-            <div class="interactive-card" onclick="loadPanel('data-hub', this)">
-                <h3>02 // The Data Hub</h3>
-                <p>Empirical proof, fiscal assets, and statistics.</p>
-            </div>
-            <div class="interactive-card" onclick="loadPanel('action', this)">
-                <h3>03 // Take Action</h3>
-                <p>National networks, law modifications, and local help.</p>
-            </div>
-            <div class="interactive-card" onclick="loadPanel('impact', this)">
-                <h3>04 // Our Impact</h3>
-                <p>Accountability framework and systemic recovery updates.</p>
-            </div>
-        </div>
+        <p style="color: #059669; font-weight: bold; text-transform: uppercase;">Click on any topic box below to see what it will show:</p>
 
-        <div class="detail-display-panel" id="display-panel">
-            <p id="detail-text">> Select a node card block from the system directory above to mount data...</p>
-        </div>
-    </main>
-
-    <script>
-        const panelData = {
-            'inequity': '<strong>SYSTEM ACCESS // INEQUITY NODE:</strong> Before analyzing raw structural trends, we evaluate daily human dynamics. Reentry transforms simple tasks like shelter acquisition or baseline application processing into critical blocks. This window addresses exactly four explicit societal tracking points.',
-            'data-hub': '<strong>SYSTEM ACCESS // DATA HUB NODE:</strong> Transitioning directly from experiential observations to strict validation arrays. This core ledger catalogs tracking rates for system release fields, financial investment allocations toward correction management, and county budget implications.',
-            'action': '<strong>SYSTEM ACCESS // ACTION NODE:</strong> Structural monitoring requires active solution implementation. This registry covers operational models for legal assistance arrays, baseline "Ban the Box" legal framework components, and localized volunteer setups organized inside Marin County.',
-            'impact': '<strong>SYSTEM ACCESS // IMPACT NODE:</strong> Metric verification logs. This partition outlines concrete legal restoration timelines, recovery progress logs, and verified outcomes showcasing performance shifts once active administrative assistance is provided to returning citizens.'
-        };
-
-        function loadPanel(key, element) {
-            document.querySelectorAll('.interactive-card').forEach(card => card.classList.remove('selected'));
-            element.classList.add('selected');
+        <div class="home-split-container">
             
-            const panel = document.getElementById('display-panel');
-            const text = document.getElementById('detail-text');
-            text.innerHTML = panelData[key];
-            panel.classList.add('active');
-        }
-    </script>
+            <div class="grid-menu">
+                <div class="interactive-card" onclick="loadPanel('inequity', this)">
+                    <h3>01 // The Inequity</h3>
+                    <p>Human-side analysis of reentry barriers.</p>
+                </div>
+                
+                <div class="interactive-card" onclick="loadPanel('data-hub', this)">
+                    <h3>02 // The Data Hub</h3>
+                    <p>Empirical proof and statistics.</p>
+                </div>
+                
+                <div class="interactive-card" onclick="loadPanel('action', this)">
+                    <h3>03 // Take Action</h3>
+                    <p>National networks and local help.</p>
+                </div>
+                
+                <div class="interactive-card" onclick="loadPanel('impact', this)">
+                    <h3>04 // Our Impact</h3>
+                    <p>Campaigns and community building.</p>
+                </div>
+            </div>
 
-</body>
-</html>
+            <div class="detail-display-panel" id="display-panel">
+                <p id="detail-text">> Select a node card block from the system directory above to mount data...</p>
+            </div>
+
+        </div>
+
+        <p style="margin-top: 80px; font-weight: bold; text-align: center;">So, now dive into the site to learn about the traps and struggles behind ex-convicts, the evidence, and see how our community can fight for fair second chances for these people.</p>
+    </main>
