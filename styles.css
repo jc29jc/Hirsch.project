@@ -1,4 +1,5 @@
 /* style.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +7,9 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace; /* Clean, intentional tech/monospace font */
-    background-color: #121214;
-    color: #e4e4e7;
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #f8fafc; /* Soft, light slate tint */
+    color: #334155; /* Mild dark slate text */
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -19,14 +20,14 @@ body {
 .nav-container {
     width: 100%;
     max-width: 950px;
-    background-color: #1a1a1e;
-    border: 3px solid #a855f7; /* Thick bold purple border */
+    background-color: #ffffff; /* Crisp white background */
+    border: 3px solid #64748b; /* Soft slate border */
     padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    box-shadow: 6px 6px 0px #a855f7; /* Flat retro offset shadow */
+    box-shadow: 6px 6px 0px #cbd5e1; /* Soft flat grey offset shadow */
     margin-bottom: 40px;
 }
 
@@ -39,14 +40,14 @@ body {
 .logo-img {
     width: 50px;
     height: 50px;
-    border: 2px solid #84cc16; /* Vibrant lime accent frame */
+    border: 2px solid #65a30d; /* Calm green accent border */
     object-fit: cover;
 }
 
 .site-title {
     font-size: 30px;
     font-weight: 900;
-    color: #ffffff;
+    color: #1e293b; /* Dark title text */
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -60,172 +61,48 @@ body {
 }
 
 .nav-links a {
-    color: #a1a1aa;
+    color: #64748b; /* Soft grey-blue */
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 8px 16px;
-    border: 2px solid #3f3f46;
+    border: 2px solid #e2e8f0;
     transition: all 0.15s ease;
 }
 
 .nav-links a:hover {
-    color: #84cc16;
-    border-color: #84cc16;
-    background-color: #1f2d1d;
+    color: #65a30d;
+    border-color: #65a30d;
+    background-color: #f7fee7; /* Ultra light green tint */
 }
 
 /* Stark toggle state for active item */
 .nav-links a.active {
-    color: #121214;
-    background-color: #a855f7; /* Solid purple block filling the link */
-    border-color: #a855f7;
+    color: #ffffff;
+    background-color: #64748b; /* Soft slate block filling the link */
+    border-color: #64748b;
 }
 
 /* Core Main Window Module */
 main {
     width: 100%;
     max-width: 950px;
-    background-color: #1a1a1e;
-    border: 3px solid #3f3f46;
+    background-color: #ffffff;
+    border: 3px solid #cbd5e1;
     padding: 40px;
-    box-shadow: 6px 6px 0px #3f3f46;
+    box-shadow: 6px 6px 0px #e2e8f0;
 }
 
 .page-intro {
     font-size: 16px;
     line-height: 1.6;
-    color: #d4d4d8;
+    color: #475569;
     margin-bottom: 30px;
-    border-left: 4px solid #84cc16;
+    border-left: 4px solid #65a30d;
     padding-left: 16px;
 }
 
 .section-header {
     font-size: 24px;
     font-weight: 800;
-    color: #84cc16; /* Lime Green headings */
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-/* Sharp Asymmetrical Grid Cards */
-.grid-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.interactive-card {
-    background-color: #222227;
-    border: 2px solid #3f3f46;
-    padding: 20px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.interactive-card:hover {
-    border-color: #84cc16;
-    transform: translate(-2px, -2px);
-    box-shadow: 4px 4px 0px #84cc16;
-}
-
-.interactive-card.selected {
-    border-color: #a855f7;
-    background-color: #271c3a;
-    box-shadow: 4px 4px 0px #a855f7;
-}
-
-.interactive-card h3 {
-    font-size: 16px;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.interactive-card p {
-    font-size: 13px;
-    color: #a1a1aa;
-    line-height: 1.4;
-}
-
-/* Split-Panel Detail Readout Box */
-.detail-display-panel {
-    margin-top: 25px;
-    background-color: #121214;
-    border: 2px dashed #a855f7;
-    padding: 24px;
-    min-height: 100px;
-}
-
-.detail-display-panel.active {
-    border-style: solid;
-    background-color: #1e1b29;
-}
-
-#detail-text {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #e4e4e7;
-}
-
-/* Clean list setups for content pages */
-.question-list {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.question-list li {
-    background-color: #222227;
-    padding: 16px;
-    border: 1px solid #3f3f46;
-    margin-bottom: 12px;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.question-list li strong {
-    color: #84cc16;
-}
-
-.content-placeholder {
-    margin-top: 30px;
-    padding: 20px;
-    border: 2px dashed #3f3f46;
-    color: #71717a;
-    font-style: italic;
-    font-size: 14px;
-}
-/* Inequity Page Interactive Breakdown Rules */
-.notes-breakdown {
-    text-align: left;
-    margin-top: 15px;
-}
-
-.note-item {
-    margin-bottom: 18px;
-    padding-bottom: 12px;
-    border-bottom: 1px dashed #3f3f46;
-}
-
-.note-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.note-item h4 {
-    color: #84cc16;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.note-item p {
-    color: #e4e4e7;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0;
-}
