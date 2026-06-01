@@ -7,9 +7,9 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace; 
-    background-color: #f8fafc; /* Soft, light slate tint */
-    color: #334155; /* Mild dark slate text */
+    font-family: 'Courier New', Courier, monospace; /* Keeps the large, raw monospace type */
+    background-color: #e2e8f0; /* Bright, clean light slate background */
+    color: #1e293b; /* Dark text for high readability */
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -20,14 +20,14 @@ body {
 .nav-container {
     width: 100%;
     max-width: 950px;
-    background-color: #ffffff; /* Crisp white background */
-    border: 3px solid #64748b; /* Soft slate border */
+    background-color: #ffffff; /* Sharp white contrast box */
+    border: 3px solid #059669; /* Thick, bold electric mint border */
     padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    box-shadow: 6px 6px 0px #cbd5e1; /* Soft flat grey offset shadow */
+    gap: 20px; /* Big gap spacing */
+    box-shadow: 6px 6px 0px #059669; /* Bold mint offset shadow */
     margin-bottom: 40px;
 }
 
@@ -40,14 +40,14 @@ body {
 .logo-img {
     width: 50px;
     height: 50px;
-    border: 2px solid #65a30d; /* Calm green accent border */
+    border: 2px solid #059669; /* Match mint theme */
     object-fit: cover;
 }
 
 .site-title {
-    font-size: 30px;
+    font-size: 30px; /* Large font size retained */
     font-weight: 900;
-    color: #1e293b; /* Dark title text */
+    color: #0f172a;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -57,31 +57,31 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 15px; /* Wide gap spacing between buttons */
 }
 
 .nav-links a {
-    color: #64748b; /* Soft grey-blue */
+    color: #334155;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 8px 16px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid #cbd5e1;
     transition: all 0.15s ease;
 }
 
 .nav-links a:hover {
-    color: #65a30d;
-    border-color: #65a30d;
-    background-color: #f7fee7; /* Ultra light green tint */
-}
+    color: #059669;
+    border-color: #059669;
+    background-color: #ecfdf5; /* Soft mint hover glow */
+} cutout
 
 /* Stark toggle state for active item */
 .nav-links a.active {
     color: #ffffff;
-    background-color: #64748b; /* Soft slate block filling the link */
-    border-color: #64748b;
+    background-color: #059669; /* Solid vibrant mint block filling the active link */
+    border-color: #059669;
 }
 
 /* Core Main Window Module */
@@ -91,18 +91,8 @@ main {
     background-color: #ffffff;
     border: 3px solid #cbd5e1;
     padding: 40px;
-    box-shadow: 6px 6px 0px #e2e8f0;
+    box-shadow: 6px 6px 0px #cbd5e1; /* Large offset shadow block */
 }
 
 .page-intro {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #475569;
-    margin-bottom: 30px;
-    border-left: 4px solid #65a30d;
-    padding-left: 16px;
-}
-
-.section-header {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 16
