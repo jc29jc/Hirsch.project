@@ -1,78 +1,110 @@
 /* style.css */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #fcfaf6; /* Warm off-white background from your image */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
     margin: 0;
-    padding: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content container on the page */
 }
 
-/* Header Container - Forces logo left, links right with wide padding */
+/* Centered Navigation Wrapper */
 .nav-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 24px 80px; /* Gives it that wide, spacious look */
-    background-color: #fcfaf6;
+    justify-content: center;
+    gap: 24px; /* Generous vertical spacing between logo/title and links */
     width: 100%;
-    box-sizing: border-box;
+    max-width: 900px;
+    margin-bottom: 30px;
 }
 
-/* Left Brand Alignment */
+/* Brand Identity Area */
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px; /* Spacing between the logo image and text */
 }
 
-/* Clean Circular Logo Image Style */
+/* Styled Image Logo */
 .logo-img {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Site Title Typography */
+/* Premium Typography for Title */
 .site-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    color: #0b1a19;
-    font-family: Georgia, serif; /* Clean serif font matching Smarter Sipping */
+    color: #111111;
+    letter-spacing: -0.5px;
 }
 
-/* Right Links Alignment */
+/* Centered Link Bar */
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 10px; /* Tight grouping exactly like your reference image */
+    justify-content: center;
+    gap: 32px; /* Wide, clean spacing between each navigation choice */
+    padding: 0;
+    margin: 0;
 }
 
-/* Inactive Link Styling (No underlines, soft gray color) */
+/* Clean Text Links (No default blue/purple or raw lines) */
 .nav-links a {
-    color: #5c6665;
+    color: #666666; /* Muted gray for secondary links */
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 10px 22px;
-    border-radius: 24px;
+    padding: 6px 0;
+    position: relative;
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #0b1a19;
+    color: #111111;
 }
 
-/* Active Link Styling (The exact dark capsule button from your screenshot) */
+/* Underline Indicator for the Active Page */
 .nav-links a.active {
-    background-color: #051413; /* Very deep dark teal/black button background */
-    color: #ffffff !important; /* Sharp white text inside the capsule */
+    color: #111111;
+    font-weight: 600;
 }
 
-/* Main Content Box */
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #111111; /* Clean underline matching the text color */
+}
+
+/* Divider Line */
+hr {
+    border: 0;
+    height: 1px;
+    background: #eaeaea;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px 0 40px 0;
+}
+
+/* Main Content Typography */
 main {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
+    max-width: 750px;
+    width: 100%;
+    text-align: center; /* Centers body text copy to match the layout */
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333333;
 }
