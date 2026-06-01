@@ -1,95 +1,91 @@
-
+/* style.css */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #fcfaf6; /* Warm, soft, non-boring off-white canvas */
-    color: #1a2323; /* Dark slate text for soft contrast */
+    background-color: #fcfaf6; /* Warm off-white canvas from reference image */
+    color: #1a2323;
     margin: 0;
-    padding: 20px;
+    padding: 0; /* Removed body padding to let nav touch the edges smoothly */
 }
 
-/* Reference-Matched Header Bar */
+/* Reference-Matched Wide Header Bar */
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-color: transparent; /* Seamless blending into background canvas */
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between; /* Pushes logo left, links right */
+    padding: 25px 80px; /* Generous breathing room on top/bottom and sides */
+    background-color: transparent; /* No ugly boxes; blends seamlessly into the page background */
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Left Side: Logo & Branding */
+/* Left Branding Zone */
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px; /* Clean spacing between logo circle and site title */
 }
 
+/* CSS Text Logo Alternative to match the clean "ss" circle */
+.logo-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #0d1f1d; /* Deep dark slate circle */
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+}
+
+/* If you prefer using your uploaded image, swap .logo-icon out for this in your HTML */
 .logo-img {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .site-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     color: #0d1f1d;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.5px; /* Slight tuck for a professional editorial look */
 }
 
-/* Right Side: Tab Links Navigation */
+/* Right Navigation Links Zone */
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 32px; /* Generous space between individual link titles */
 }
 
 .nav-links a {
-    color: #616e6d;
+    color: #5c6968; /* Soft slate gray for inactive links */
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
-    padding: 8px 18px;
-    border-radius: 20px;
-    transition: all 0.2s ease-in-out;
+    padding: 10px 24px; /* Perfectly proportioned capsule padding */
+    border-radius: 24px;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #0d1f1d;
+    color: #0d1f1d; /* Darkens cleanly on hover */
 }
 
-/* Dark Minimal Capsule for Active Page (From reference image style) */
+/* Minimal Dark Capsule Button for Active Page (From reference image) */
 .nav-links a.active {
-    background-color: #081a19; 
+    background-color: #081a19; /* High-contrast clean dark capsule */
     color: #ffffff !important;
 }
 
-/* Main Core Content Container */
+/* Core Content Card Container */
 main {
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 850px;
+    margin: 60px auto; /* Centered cleanly with ample top spacing below navbar */
     background-color: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(13, 31, 29, 0.03);
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.65;
-    color: #334241;
-    margin-bottom: 20px;
-}
-
-strong {
-    color: #0d1f1d;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #e6ebea;
-    margin: 30px 0;
-}
+    padding: 45
