@@ -3,62 +3,45 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the nav and main box on the screen */
+    margin: 20px;
+    padding: 0;
+    text-align: center; /* This centers the original text navigation and the main text */
 }
 
-/* Centered navigation bar layout */
+/* Original plain text navigation */
 nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center; /* Centers the links inside the nav bar */
-    align-items: center;
-    padding-bottom: 15px;
     font-size: 16px;
-    width: 100%;
-    max-width: 800px;
+    margin-bottom: 15px;
 }
 
 nav a {
-    color: #555555;
+    color: #000000;
     text-decoration: none;
-    padding: 4px 0;
-    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #000000;
+    text-decoration: underline;
 }
 
-/* Marks the current active page with a clean underline */
+/* Bold styling for the current active page */
 nav a.active {
     font-weight: bold;
-    color: #000000;
-    border-bottom: 2px solid #000000;
 }
 
-/* Centered Main Content Area */
+/* Main Content Area */
 main {
     margin-top: 20px;
-    max-width: 800px;
-    width: 100%;
-    text-align: center; /* Centers all text inside the main block */
 }
 
 p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 15px;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background: #dddddd;
+    background: #000000;
     margin: 20px 0;
-    width: 100%;
-    max-width: 800px;
 }
