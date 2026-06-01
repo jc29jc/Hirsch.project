@@ -2,42 +2,34 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: #fcfaf6; /* Warm off-white background from your image */
-    color: #1a2323;
     margin: 0;
     padding: 0;
 }
 
-/* Header Bar Container */
+/* Header Container - Forces logo left, links right with wide padding */
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 80px;
+    padding: 24px 80px; /* Gives it that wide, spacious look */
     background-color: #fcfaf6;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Left Brand Section */
+/* Left Brand Alignment */
 .logo-area {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* Circular Logo Icon matching the "ss" style circle */
-.logo-icon {
+/* Clean Circular Logo Image Style */
+.logo-img {
     width: 38px;
     height: 38px;
-    background-color: #0b2120; /* Deep dark teal circle */
-    color: #ffffff;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: lowercase;
+    object-fit: cover;
 }
 
 /* Site Title Typography */
@@ -45,24 +37,24 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: #0b1a19;
-    font-family: Georgia, serif; /* Elegant serif font matching your reference image */
+    font-family: Georgia, serif; /* Clean serif font matching Smarter Sipping */
 }
 
-/* Right Links Section */
+/* Right Links Alignment */
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 15px; /* Spaces out the text links */
+    gap: 10px; /* Tight grouping exactly like your reference image */
 }
 
-/* Standard Inactive Links (Plain text styling) */
+/* Inactive Link Styling (No underlines, soft gray color) */
 .nav-links a {
-    color: #5c6665; /* Muted gray text */
+    color: #5c6665;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 22px;
+    border-radius: 24px;
     transition: color 0.2s ease;
 }
 
@@ -70,32 +62,17 @@ body {
     color: #0b1a19;
 }
 
-/* Active Page Button - The solid dark capsule background from your image */
+/* Active Link Styling (The exact dark capsule button from your screenshot) */
 .nav-links a.active {
-    background-color: #051413; /* Dark pill capsule */
-    color: #ffffff !important; /* White text inside the active capsule */
-    font-weight: 500;
+    background-color: #051413; /* Very deep dark teal/black button background */
+    color: #ffffff !important; /* Sharp white text inside the capsule */
 }
 
-/* Main Content Layout Container */
+/* Main Content Box */
 main {
     max-width: 800px;
     margin: 40px auto;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.65;
-    color: #2d3635;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #e5e0d8;
-    margin: 30px 0;
 }
