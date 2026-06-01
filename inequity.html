@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond the Bars - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Beyond the Bars</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="nav-container">
-        <div class="logo-area">
-            <img class="logo-img" src="B3670EBD-22E5-4513-84E0-EB4844BD3084.png" alt="Second Chances Logo">
-            <span class="site-title">Beyond the Bars</span>
-        </div>
 
     <nav>
         <a href="index.html">Home</a>
@@ -25,62 +19,22 @@
  <hr>
 
     <main>
-        <p>When someone gets out of prison, people usually like to believe that their punishment has been faced and that they can just start fresh. But in reality, instead of being free to start over, they face a new invisible punishment that no one recognizes after being released. This website is going to expose the harsh reality of the challenges an ex-convict faces after being released from jail.</p>
+        <p><strong>The Inequity</strong></p>
         
-        <p style="color: #06b6d4; font-weight: 600; margin-top: 40px; font-size: 15px; letter-spacing: 0.5px; text-transform: uppercase;">Click on any topic box below to see what it will show:</p>
+        <p>Welcome to the Inequity page. Before we jump into numbers or statistics, we need to understand the human side of this problem. When someone leaves prison, everyday tasks that seem simple to us like finding a good place to sleep or getting a job turn into huge challenges for these ex-convicts. This page will break down the challenges that returning citizens face when they get out of prison.</p>
+        
+        <p>There are four major questions that we will be looking at:</p>
 
-        <div class="topic-grid">
-            <div class="topic-box" onclick="showPreview('inequity', this)">
-                <h3>The Inequity</h3>
-                <p>Explore the heavy real-world barriers returning citizens hit instantly upon release.</p>
-            </div>
-            
-            <div class="topic-box" onclick="showPreview('data-hub', this)">
-                <h3>The Data Hub</h3>
-                <p>Analyze the raw facts, recidivism rates, and economic statistics backing the crisis.</p>
-            </div>
-            
-            <div class="topic-box" onclick="showPreview('take-action', this)">
-                <h3>Taking Action</h3>
-                <p>Discover movements, the 'Ban the Box' framework, and legal support initiatives.</p>
-            </div>
-            
-            <div class="topic-box" onclick="showPreview('our-impact', this)">
-                <h3>Our Impact</h3>
-                <p>See real-life transformations, local systemic shifts, and community success data.</p>
-            </div>
-        </div>
+        <p>1. What hard struggles do people face the exact moment they get out of prison?</p>
 
-        <div class="preview-display-container" id="preview-box">
-            <p id="preview-text">Select a topic box from above to read its preview summary details...</p>
-        </div>
-    </main>
+        <p>2. How does having a criminal record ruin someone's chances of finding a place to live or getting a job, and how?</p>
 
-    <script>
-        // Storage map containing the exact description values for each unique topic box
-        const previews = {
-            'inequity': '<strong>The Inequity Page Preview:</strong> Before jumping into raw data numbers, we examine the human side of reentry. When someone leaves prison, tasks that seem simple—like securing safe housing or applying for an entry job—turn into immediate systemic roadblocks. This page systematically maps the four major pillars of returning citizen exclusion.',
-            'data-hub': '<strong>The Data Hub Page Preview:</strong> This page brings forward solid empirical evidence. We back the raw social struggles up with hard facts and analytical statistics. You will explore critical data regarding high ex-convict unemployment disparity scales, three-to-five year recidivism windows, and local community tax burden charts.',
-            'take-action': '<strong>Taking Action Page Preview:</strong> Looking at statistics doesn\'t fix deep problems—action does. This section outlines concrete legal and social solution systems. We dive deep into national grassroots movements, the operational goals of \'Ban the Box\' legal initiatives, and local reentry support systems run right here within Marin County.',
-            'our-impact': '<strong>Our Impact Page Preview:</strong> Here we highlight accountability metrics and successful execution instances. This area details structural progress reports, individual recovery case studies, and quantifiable evidence showing what happens when returning citizens are provided with legitimate legal counsel and clean second chances.'
-        };
+        <p>3. How does society focusing on punishing people instead of helping them change hurt their chances of a fresh start, and how?</p>
 
-        function showPreview(topicKey, clickedElement) {
-            // 1. Clear 'selected' highlight state from all existing grid boxes
-            const boxes = document.querySelectorAll('.topic-box');
-            boxes.forEach(box => box.classList.remove('selected'));
-            
-            // 2. Add 'selected' highlight styling to the clicked box
-            clickedElement.classList.add('selected');
-            
-            // 3. Inject matching text into the preview container and apply vibrant active border
-            const previewBox = document.getElementById('preview-box');
-            const previewText = document.getElementById('preview-text');
-            
-            previewText.innerHTML = previews[topicKey];
-            previewBox.classList.add('active');
-        }
-    </script>
+        <p>4. How does discrimination against ex-convicts lead to systemic exclusion?</p>
+        
+        <hr>
+        </main>
 
 </body>
 </html>
