@@ -16,84 +16,37 @@
         <a href="about.html">About Us & Our Impact</a>
     </nav>
 
- <main style="padding-bottom: 0;">
+    <main>
         <h2 class="section-header">// Introduction</h2>
-        <p class="page-intro">When someone gets out of prison, people usually like to believe that their punishment has been faced and that they can just start fresh. But in reality, instead of being free to start over, they face a new invisible punishment that no one recognizes after being released. This website is going to expose the harsh reality of the challenges an ex-convict faces after being released from jail. So, now dive into the site to learn about the traps and struggles behind ex-convicts, the evidence, and see how our community can fight for fair second chances for these people.</p>
-        
-        <h2 class="section-header" style="margin-top: 60px;">// Page Directory</h2>
-    </main>
+        <p class="page-intro">When someone gets out of prison, people usually like to believe that their punishment has been faced and that they can just start fresh. But in reality, instead of being free to start over, they face a new invisible punishment that no one recognizes after being released. This website is going to expose the harsh reality of the challenges an ex-convict faces after being released from jail. So, now dive into the site to learn about the traps and struggles behind ex-convicts, the evidence, and see how our community can fight for fair second chances for these people.
+</p></p>
 
-    <div class="home-split-container" style="padding: 0 40px 80px 40px; max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-header" style="margin-top: 40px;">// Page Directory</h2>
         
         <div class="grid-menu">
             <div class="interactive-card" onclick="loadPanel('inequity', this)">
-                <span class="card-num">01</span>
-                <h3>The Inequity</h3>
+                <h3>01 // The Inequity</h3>
+                <p>This page will talk about everyday problems they face focusing on four major questions. This page will not include numbers or evidence yet, but instead this page will break down the major traps people face the second they walk out of prison. There will be information on the struggles they face, and how everyday tasks like finding a safe place to sleep or getting a job becomes a systematic barrier for these people leaving them with nothing.</p>
             </div>
             <div class="interactive-card" onclick="loadPanel('data-hub', this)">
-                <span class="card-num">02</span>
-                <h3>The Data Hub</h3>
+                <h3>02 // The Data Hub</h3>
+                <p>Once you know what the everyday struggles are, this page will bring in the numbers and evidence. This is the page where we back up every question and information on The Inequity page with real facts and interesting statistics. We're going to look at the math behind unemployment, how tax money is being spent, and the evidence of how many ex-convicts end up struggling once they get out of jail.
+</p>
             </div>
             <div class="interactive-card" onclick="loadPanel('action', this)">
-                <span class="card-num">03</span>
-                <h3>Take Action</h3>
+                <h3>03 // Take Action</h3>
+                <p>Just talking about a problem doesn't fix it, so this page is all about solutions and what everybody can do. We are going to talk about big national movements and protests trying to change laws behind this problem, and actual groups helping here in Marin County, and finally, showing different simple ways people can help out everyday.</p>
             </div>
             <div class="interactive-card" onclick="loadPanel('impact', this)">
-                <span class="card-num">04</span>
-                <h3>Our Impact</h3>
+                <h3>04 // Our Impact</h3>
+                <p>This last page is the hub for our social media campaign. We will show you how spreading awareness online can change the way people think, break down the negative stereotypes around having a bad record, and what I am doing to try to build a strong community that supports helping ex-convicts with their struggles.
             </div>
-            <div class="interactive-card" onclick="loadPanel('about', this)">
-                <span class="card-num">05</span>
-                <h3>About Us & Our Affect</h3>
-            </div>
-        </div>
-
-        <div class="detail-display-panel" id="display-panel">
-            <div class="panel-placeholder">
-                <p>Click on an inquiry sector from the directory index to review terminal field reports, systemic overviews, and action strategies.</p>
+            <div class="interactive-card" onclick="loadPanel('About', this)">
+                <h3>05 // About us & Our Affect</h3>
+                <p>This page is the author's page. This page is about me and my partner and why we started this project. Here you will see who we are, why we care about this cause and issue, and how we plan to help ex-convicts get a fair second chance ourselves.
             </div>
         </div>
-
-    </div>
-
-    <script>
-        const panelData = {
-            'inequity': '<h4>01 // THE INEQUITY</h4><p>This page will talk about everyday problems they face focusing on four major questions. This page will not include numbers or evidence yet, but instead this page will break down the major traps people face the second they walk out of prison. There will be information on the struggles they face, and how everyday tasks like finding a safe place to sleep or getting a job becomes a systematic barrier for these people leaving them with nothing.</p>',
-            
-            'data-hub': '<h4>02 // THE DATA HUB</h4><p>Once you know what the everyday struggles are, this page will bring in the numbers and evidence. This is the page where we back up every question and information on The Inequity page with real facts and interesting statistics. We\'re going to look at the math behind unemployment, how tax money is being spent, and the evidence of how many ex-convicts end up struggling once they get out of jail.</p>',
-            
-            'action': '<h4>03 // TAKE ACTION</h4><p>Just talking about a problem doesn\'t fix it, so this page is all about solutions and what everybody can do. We are going to talk about big national movements and protests trying to change laws behind this problem, and actual groups helping here in Marin County, and finally, showing different simple ways people can help out everyday.</p>',
-            
-            'impact': '<h4>04 // OUR IMPACT</h4><p>This last page is the hub for our social media campaign. We will show you how spreading awareness online can change the way people think, break down the negative stereotypes around having a bad record, and what I am doing to try to build a strong community that supports helping ex-convicts with their struggles.</p>',
-            
-            // This is updated to stack the text on top and the photos underneath inside the preview block
-            'about': `
-                <div class="card-content-stack">
-                    <div class="card-text-top">
-                        <h4>05 // ABOUT US & OUR AFFECT</h4>
-                        <p>This page is the author\'s page. This page is about me and my partner and why we started this project. Here you will see who we are, why we care about this cause and issue, and how we plan to help ex-convicts get a fair second chance ourselves.</p>
-                    </div>
-                    <div class="card-media-bottom">
-                        <img src="image_b9d9db.png" alt="Hiring barriers behind bars" class="panel-stack-img">
-                        <img src="B3670EBD-22E5-4513-84E0-EB4844BD3084.png" alt="Second Chances campaign artwork" class="panel-stack-img">
-                    </div>
-                </div>
-            `
-        };
-
-        function loadPanel(key, clickedCard) {
-            // Remove active highlighting style from all navigation cards
-            document.querySelectorAll('.interactive-card').forEach(card => {
-                card.classList.remove('selected');
-            });
-            // Add highlighting style to the clicked card
-            clickedCard.classList.add('selected');
-
-            // Inject the targeted content directly into the right-side container box
-            const displayPanel = document.getElementById('display-panel');
-            displayPanel.innerHTML = panelData[key];
-        }
-    </script>
+    </main>
 
 </body>
 </html>

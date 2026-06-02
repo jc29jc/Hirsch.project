@@ -248,31 +248,3 @@ main {
     font-size: 14px;
     line-height: 2.0;
 }
-/* Home Page Preview Panel Vertical Stack Layout */
-.card-content-stack {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.card-text-top {
-    width: 100%;
-    margin-bottom: 32px; /* Leaves a clean space between the text block and the first image */
-}
-
-.card-media-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 24px; /* Creates a clean gap between the two stacked images */
-    width: 100%;
-}
-
-.panel-stack-img {
-    width: 100%;
-    max-width: 450px; /* Keeps the images locked to a clean, readable size so they don't look giant */
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px; /* Smooth rounded corners that match your card styling */
-    border: 1px solid #e4e4e2; /* Subtle boundary border so it blends with your theme */
-    align-self: flex-start; /* Neatly aligns the images to the left edge of the white panel */
-}
