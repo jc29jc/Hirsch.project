@@ -248,3 +248,16 @@ main {
     font-size: 14px;
     line-height: 2.0;
 }
+/* 1. This hides the drop-down panel by default */
+.question-list .inline-panel {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
+    margin-top: 15px;
+}
+
+/* 2. This forces the panel to display when the card is clicked/selected */
+.question-list .interactive-card.selected .inline-panel {
+    display: block !important;
+}
