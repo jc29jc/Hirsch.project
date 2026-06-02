@@ -13,29 +13,71 @@
         <a href="inequity.html">The Inequity</a>
         <a href="data.html">The Data Hub</a>
         <a href="action.html">Take Action</a>
-        <a href="impact.html">Our Impact</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html">About Us & Our Impact</a>
     </nav>
 
-<hr>
-
-    <main>
-        <p><strong>Take Action</strong></p>
+<main>
+        <h2 class="section-header">03 // Taking Action</h2>
+        <p class="page-intro">Just talking about a problem doesn't fix it, so this page is all about solutions and what everybody can do. We are going to talk about big national movements and protests trying to change laws behind this problem, and actual groups helping here in Marin County, and finally, showing different simple ways people can help out everyday.</p>
         
-        <p>This is the Taking Action page. Just talking about a problem or looking at statistics does not actually fix anything, so we need to talk about solutions. This page will discuss how people are fighting back to change this inequality. We will look at the big protests and movements working to rewrite laws and beliefs, groups helping out in Marin County, and everyday things people can do to help.</p>
+        <h2 class="section-header">// Solution Action Plans</h2>
+        <p style="color: #8c8c8c; font-size: 15px; margin-bottom: 40px;">(Click on an action box below to expand the solutions directly underneath)</p>
         
-        <p>Here are the four main questions about solutions that will be answered on this page:</p>
+        <ul class="question-list">
+            
+            <li class="interactive-card" onclick="toggleQuestion(this)">
+                <span class="card-num">01</span>
+                <h3>National Movements & Protests</h3>
+                <div class="inline-panel">
+                    <div class="notes-breakdown">
+                        <div class="note-item">
+                            <h4>Changing the Laws</h4>
+                            <p>Large-scale national advocacy groups push for legal updates like "Ban the Box" policies, which remove the criminal record check box from initial job applications so people can be judged on their skills first.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
-        <p>1. What group strategy's or national movements exist to help ex-convicts?</p>
+            <li class="interactive-card" onclick="toggleQuestion(this)">
+                <span class="card-num">02</span>
+                <h3>Local Support in Marin County</h3>
+                <div class="inline-panel">
+                    <div class="notes-breakdown">
+                        <div class="note-item">
+                            <h4>Community Networks</h4>
+                            <p>Right here in Marin County, there are community programs and non-profits dedicated to helping returning citizens find stable housing, access mental health support, and secure steady employment.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
-        <p>2. What is the Ban the Box movement and what are its goals?</p>
+            <li class="interactive-card" onclick="toggleQuestion(this)">
+                <span class="card-num">03</span>
+                <h3>Everyday Support Solutions</h3>
+                <div class="inline-panel">
+                    <div class="notes-breakdown">
+                        <div class="note-item">
+                            <h4>Simple Ways to Help</h4>
+                            <p>Regular citizens can assist by supporting fair-chance employers, volunteering with tutoring or mentorship programs, and spreading accurate information to counter harmful stereotypes.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
-        <p>3. What are good ways for communities to support prisoner second chances?</p>
+        </ul>
+    </main>
 
-        <p>4. What legal help and reentry services does the New Beginnings Law Center provide in Marin County?</p>
-        
-        <hr>
-        </main>
+    <script>
+        function toggleQuestion(clickedCard) {
+            const isAlreadySelected = clickedCard.classList.contains('selected');
+            document.querySelectorAll('.question-list .interactive-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            if (!isAlreadySelected) {
+                clickedCard.classList.add('selected');
+            }
+        }
+    </script>
 
 </body>
 </html>
