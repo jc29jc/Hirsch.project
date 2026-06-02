@@ -1,222 +1,105 @@
-/* style.css */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Courier New', Courier, monospace; /* Keeps the large, raw monospace type */
-    background-color: #e2e8f0; /* Bright, clean light slate background */
-    color: #1e293b; /* Dark text for high readability */
-    padding: 80px 40px; /* Double-spaced padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 2.0; /* Global double spacing for regular text elements */
-}
-
-/* Structural Neo-Brutalist Header */
-.nav-container {
-    width: 100%;
-    max-width: 950px;
-    background-color: #ffffff; /* Sharp white contrast box */
-    border: 3px solid #059669; /* Thick, bold electric mint border */
-    padding: 48px; /* Double-spaced inner container padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px; /* Double-spaced gap between title and navigation links */
-    box-shadow: 12px 12px 0px #059669; /* Thick flat offset shadow */
-    margin-bottom: 80px; /* Double-spaced margin below the main header */
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 32px; /* Double-spaced gap between the logo image and brand title text */
-}
-
-.logo-img {
-    width: 60px;
-    height: 60px;
-    border: 3px solid #059669; /* Match mint theme */
-    object-fit: cover;
-}
-
-.site-title {
-    font-size: 30px; 
-    font-weight: 900;
-    color: #0f172a;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
-/* Geometric Navigation Menu Links */
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* Double-spaced horizontal gap spacing between navigation buttons */
-}
-
-.nav-links a {
-    color: #334155;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 16px 32px; /* Double-spaced clickable area padding around text */
-    border: 2px solid #cbd5e1;
-    transition: all 0.15s ease;
-}
-
-.nav-links a:hover {
-    color: #059669;
-    border-color: #059669;
-    background-color: #ecfdf5; /* Soft mint hover glow */
-}
-
-/* Stark toggle state for active item */
-.nav-links a.active {
-    color: #ffffff;
-    background-color: #059669; /* Solid vibrant mint block filling the active link */
-    border-color: #059669;
-}
-
-/* Core Main Window Module */
-main {
-    width: 100%;
-    max-width: 950px;
-    background-color: #ffffff;
-    border: 3px solid #cbd5e1;
-    padding: 80px; /* Double-spaced interior padding for main body box */
-    box-shadow: 12px 12px 0px #cbd5e1; /* Large offset shadow block */
-}
-
-.page-intro {
-    font-size: 16px;
-    line-height: 2.0; /* Strict double spacing for intro paragraphs */
-    color: #334155;
-    margin-bottom: 60px; /* Double-spaced separation margin */
-    border-left: 6px solid #059669; /* Extra thick mint vertical flag line */
-    padding-left: 32px; /* Double-spaced left text indentation */
-}
-
-.section-header {
-    font-size: 24px;
-    font-weight: 800;
-    color: #059669; /* Mint green headings */
-    text-transform: uppercase;
-    margin-bottom: 40px; /* Double-spaced gap below sections */
-}
-
-/* Sharp Asymmetrical Grid Cards */
-.grid-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px; /* Double-spaced grid row and column spacing */
-    margin-top: 80px; /* Double-spaced separation from body content */
-}
-
 .interactive-card {
-    background-color: #f8fafc;
-    border: 2px solid #cbd5e1;
-    padding: 40px; /* Double-spaced cell spacing inner container padding */
+    background-color: #fbfbfa;
+    border: 1px solid #e4e4e2;
+    padding: 32px;
+    border-radius: 24px;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-align: left;
+    position: relative;
+    width: 100%;
 }
 
 .interactive-card:hover {
-    border-color: #059669;
-    transform: translate(-4px, -4px);
-    box-shadow: 8px 8px 0px #059669;
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
 }
 
 .interactive-card.selected {
-    border-color: #059669;
-    background-color: #f0fdf4; /* Light mint card fill when clicked */
-    box-shadow: 8px 8px 0px #059669;
+    background-color: #ffffff;
+    border-color: #1a1a1a;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.card-num {
+    font-size: 13px;
+    color: #8c8c8c;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 16px;
 }
 
 .interactive-card h3 {
-    font-size: 16px;
-    color: #0f172a;
-    text-transform: uppercase;
-    margin-bottom: 16px; /* Double-spaced margin below element headers */
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
 }
 
-.interactive-card p {
-    font-size: 13px;
-    color: #475569;
-    line-height: 2.0; /* Double spacing within description fragments */
-}
-
-/* Split-Panel Detail Readout Box (Home Page Dynamic Box) */
-.detail-display-panel {
-    margin-top: 50px; /* Double-spaced vertical offset separation */
-    background-color: #f8fafc;
-    border: 2px dashed #059669;
-    padding: 48px; /* Double-spaced data print box block interior */
-    min-height: 200px; /* Expanded layout footprint height */
-}
-
-.detail-display-panel.active {
-    border-style: solid;
-    background-color: #f0fdf4;
-}
-
-#detail-text {
-    font-size: 14px;
-    line-height: 2.0; /* Strict double spacing inside the live console readouts */
-    color: #1e293b;
-}
-
-/* Clean list setups for content pages */
-.question-list {
-    list-style: none;
-    margin-top: 40px; /* Double-spaced offset from section divider */
-}
-
-.question-list li {
-    background-color: #f8fafc;
-    padding: 32px; /* Double-spaced question entry row height */
-    border: 1px solid #cbd5e1;
-    margin-bottom: 24px; /* Double-spaced gaps separating the multi-part choices */
-    font-size: 15px;
-    line-height: 2.0; /* Strict double text space rendering */
-}
-
-.question-list li strong {
-    color: #059669;
-}
-
-/* Dropdown Inline Slide-Out Panel */
-.inline-panel {
-    display: none; 
-    margin-top: 30px; /* Double-spaced split height separation */
-    background-color: #f8fafc;
-    border-top: 2px dashed #059669;
-    padding: 40px 0 0 0; /* Expanded top offset container space */
+/* --- HOME PAGE ONLY: Side-by-Side Flex Layout --- */
+.home-split-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
     width: 100%;
 }
 
-/* Triggers when interactive card block holds the active '.selected' state */
+.home-split-container .grid-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.detail-display-panel {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #e4e4e2;
+    padding: 56px;
+    border-radius: 24px;
+    min-height: 380px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+}
+
+/* --- INEQUITY PAGE ONLY: Clean Vertical Stack List --- */
+.question-list {
+    list-style: none;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Double-spaced gap between question cards */
+}
+
+/* Dropdown Inline Panel (Pops open locally inside the card element) */
+.inline-panel {
+    display: none; 
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-top: 1px dashed #cbd5e1;
+    padding: 32px 0 0 0;
+    width: 100%;
+}
+
+/* Reveals the panel only when its specific parent card is selected */
 .interactive-card.selected .inline-panel {
     display: block;
 }
 
-/* Data Notes Text Formats inside dropdowns */
+/* Formatting for notes content inside the dropdowns */
 .notes-breakdown {
     text-align: left;
-    margin-top: 30px; /* Double-spaced block margin */
 }
 
 .note-item {
-    margin-bottom: 36px; /* Strict double spacing between separate notes blocks */
-    padding-bottom: 24px; /* Strict double padding before decorative lines */
-    border-bottom: 1px dashed #cbd5e1;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed #e4e4e2;
 }
 
 .note-item:last-child {
@@ -226,25 +109,24 @@ main {
 }
 
 .note-item h4 {
-    color: #0f172a;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-bottom: 12px; /* Double-spaced block text title gap */
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
 .note-item p {
-    color: #334155;
-    font-size: 14px;
-    line-height: 2.0; /* Core research text data double-spacing */
+    color: #4a4a4a;
+    font-size: 15px;
+    line-height: 2.0;
     margin: 0;
 }
 
-.content-placeholder {
-    margin-top: 60px; /* Double-spaced system break spacing */
-    padding: 40px; /* Double-spaced internal area size */
-    border: 2px dashed #cbd5e1;
-    color: #64748b;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 2.0;
+@media (max-width: 850px) {
+    .home-split-container {
+        flex-direction: column;
+    }
+    .home-split-container .grid-menu {
+        max-width: 100%;
+    }
 }
